@@ -2,10 +2,12 @@
 
 ##File formats: 
 XXX.fas is unaligned fasta format
+
 XXX.afa is aligned fasta format
+
 XXX.phy is aligned phylip format
   
-##mafft http://mafft.cbrc.jp/alignment/software/ installed as mafft
+##[mafft](http://mafft.cbrc.jp/alignment/software/) installed as mafft
 ###general usage
 `mafft XXX.fas > XXX.afa`
 ###align wiht G-INS-i (accurate method), sort sequences in output, output as phylip
