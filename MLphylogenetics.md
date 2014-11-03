@@ -12,7 +12,7 @@
 >RANDOM# is a randomly selected number
 
 ##Model selection
->Maximum likelihood (ML) phylogenetic inference uses a model of evolution to searchand assess possible tree topologies. Use a program like [jModelTest](https://code.google.com/p/jmodeltest2/) to select the best-fitting model of molecular evolution for a particular dataset.
+>Maximum likelihood (ML) phylogenetic inference uses a model of evolution to search and assess possible tree topologies. Use a program like [jModelTest](https://code.google.com/p/jmodeltest2/) to select the best-fitting model of molecular evolution for a particular dataset.
 
 ##[raxml](http://sco.h-its.org/exelixis/web/software/raxml/index.html)
 >program installed as `raxml` in path
