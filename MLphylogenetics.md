@@ -1,4 +1,4 @@
-#ML phylogenetic tree inference
+#Maximum likelihood phylogenetic tree inference
 
 ##File formats:
 >XXX.afa is aligned fasta format
