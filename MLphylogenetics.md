@@ -1,33 +1,33 @@
 #Maximum likelihood (ML) phylogenetic tree inference
 
 ##File formats:
->XXX.afa is aligned fasta format (if your alignment is in this format, you can convert it to phylip using a [web server](http://genome.nci.nih.gov/tools/reformat.html); output as PHYLIP-Seq) 
+* `XXX.afa` is aligned fasta format (if your alignment is in this format, you can convert it to phylip using a [web server](http://genome.nci.nih.gov/tools/reformat.html); output as PHYLIP-Seq) 
 
->XXX.phy is aligned phylip format 
+* `XXX.phy` is aligned phylip format 
 
->XXX is job name (used in output files)
+* `XXX` is job name (used in output files)
 
->OUTGROUP is the taxon used as an outgroup (optional)
+* `OUTGROUP` is the taxon used as an outgroup (optional)
 
->RANDOM# is a randomly selected number
+* `RANDOM#` is a randomly selected number
 
 ##Model selection
->Maximum likelihood (ML) phylogenetic inference uses a model of evolution to search and assess possible tree topologies. Use a program like [jModelTest](https://code.google.com/p/jmodeltest2/) to select the best-fitting model of molecular evolution for a particular dataset. You may need to change parameters in the scripts below if a the selected model differs from GTR+G. Note: I choose not to use the parameter I (proportion of invariant sites).
+Maximum likelihood (ML) phylogenetic inference uses a model of evolution to search and assess possible tree topologies. Use a program like [jModelTest](https://code.google.com/p/jmodeltest2/) to select the best-fitting model of molecular evolution for a particular dataset. You may need to change parameters in the scripts below if a the selected model differs from GTR+G. Note: I choose not to use the parameter I (proportion of invariant sites).
 
 ##[raxml](http://sco.h-its.org/exelixis/web/software/raxml/index.html)
->program installed as `raxml` in path
+* program installed as `raxml` in path
 
->[web server](http://embnet.vital-it.ch/raxml-bb/)
+* [web server](http://embnet.vital-it.ch/raxml-bb/)
 
->RAxML is designed for large datasets, and has a limited number of model parameters.
+* RAxML is designed for large datasets, and has a limited number of model parameters.
 
->search for best-scoring ML tree and run 1000 rapid bootstrap replicates under GTR+G
+* search for best-scoring ML tree and run 1000 rapid bootstrap replicates under GTR+G
 
->`raxml -f a -# 1000 -n XXX -o OUTGROUP -m GTRGAMMA -x RANDOM# -s XXX.phy -p RANDOM#`
+`raxml -f a -# 1000 -n XXX -o OUTGROUP -m GTRGAMMA -x RANDOM# -s XXX.phy -p RANDOM#`
 
->Several files are output from this analysis. The most important are:
->>RAxML_info.XXX (specifies the parameters used to run the analysis, also describes the input data)
->>RAxML_bipartitions.XXX (the highest scoring likelihood tree with bootstrap support values annotated on branches, newick format)
+* Several files are output from this analysis. The most important are:
+	* `RAxML_info.XXX` (specifies the parameters used to run the analysis, also describes the input data)
+	* `RAxML_bipartitions.XXX` (the highest scoring likelihood tree with bootstrap support values annotated on branches, newick format)
 
 ##[phyml](http://www.atgc-montpellier.fr/phyml/binaries.php)
 >program installed as `phyml` in path

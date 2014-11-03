@@ -7,9 +7,9 @@ These files are short cheat sheets for my preferred methods to run in a bash she
 
 Scripts assume nucleotide data, unless amino acid (protein) data is otherwise specified. If you are starting with unaligned nucleotide data, you will likely consult the files in the following order:
 
->sequenceAlign.md: multiple sequence alignment
+* sequenceAlign.md: multiple sequence alignment
 
->MLphylogenetics.md: Maximum likelihood tree inference
+* MLphylogenetics.md: Maximum likelihood tree inference
 
->treeViz.md: tree visualization
+* treeViz.md: tree visualization
 
