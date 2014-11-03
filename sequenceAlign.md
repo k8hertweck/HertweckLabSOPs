@@ -12,13 +12,17 @@
 
 >[web server](http://toolkit.tuebingen.mpg.de/mafft)
 
->general usage
+>general usage (will need to convert to phylip format to run a tree, or see parameter below)
 
 >`mafft XXX.fas > XXX.afa`
 
->align wiht G-INS-i (accurate method), sort sequences in output, output as phylip
+>align with G-INS-i (accurate method), sort sequences in output, output as phylip (the last parameter is useful for input into a tree building program, see MLphylogenetics.md)
 
 >`mafft --globalpair -maxiterate 16 --phylipout --reorder XXX.fas > XXX.phy`
+
+>help
+
+>`mafft -h`
 
 >[parameters for large trees](http://mafft.cbrc.jp/alignment/software/tips.html)
 
@@ -29,7 +33,10 @@
 
 >[web server](http://www.ebi.ac.uk/Tools/msa/muscle/)
 
->general usage
+>general usage (will need to convert to phylip format to run a tree)
 
 >`muscle -in XXX.fas -out XXX.afa`
 
+>help
+
+>`muscle -h`
