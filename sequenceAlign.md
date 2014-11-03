@@ -1,11 +1,11 @@
 #Multiple sequence alignment
 
 ##File formats: 
-* XXX.fas is unaligned fasta format
+* `XXX.fas` is unaligned fasta format
 
-* XXX.afa is aligned fasta format
+* `XXX.afa` is aligned fasta format
 
-* XXX.phy is aligned phylip format
+* `XXX.phy` is aligned phylip format
   
 ##[mafft](http://mafft.cbrc.jp/alignment/software/) 
 * program installed as `mafft` in path
@@ -22,7 +22,7 @@
 
 * help
 
-* `mafft -h`
+`mafft -h`
 
 * [parameters for large trees](http://mafft.cbrc.jp/alignment/software/tips.html)
 
