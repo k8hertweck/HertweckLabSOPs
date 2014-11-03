@@ -25,6 +25,10 @@
 
 >`raxml -f a -# 1000 -n XXX -o OUTGROUP -m GTRGAMMA -x RANDOM# -s XXX.phy -p RANDOM#`
 
+>Several files are output from this analysis. The most important are:
+>>RAxML_info.XXX (specifies the parameters used to run the analysis, also describes the input data)
+>>RAxML_bipartitions.XXX (the highest scoring likelihood tree with bootstrap support values annotated on branches, newick format)
+
 ##[phyml](http://www.atgc-montpellier.fr/phyml/binaries.php)
 >program installed as `phyml` in path
 
@@ -36,3 +40,6 @@
 
 >`phyml -i XXX.phy -d nt -q -n 1 -b 1000 -run_id XXX -m GTR -f m -c 4 -a e -o tlr -s NNI`
 
+>Several files are output from this analysis. The most important are:
+>>XXX.phy_phyml_stats_XXX.txt (specifies the parameters used to run the analysis, also describes the input data)
+>>XXX.phy_phyml_tree_XXX.txt (the highest scoring likelihood tree with bootstrap support values annotated on branches, newick format)
