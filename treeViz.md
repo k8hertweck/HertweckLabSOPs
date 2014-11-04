@@ -1,5 +1,7 @@
 #Tree visualization in R
 
+[Figtree](http://tree.bio.ed.ac.uk/software/figtree/) is also good for exporting publication-ready tree figures, but is limited in what manipulations you can perform.
+
 The following commands aren't the most elegant R scripts, but they are written to be easily modifiable to suit different types of tree visualizations.
 
 ##File formats: 
