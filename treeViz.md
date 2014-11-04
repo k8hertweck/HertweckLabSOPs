@@ -1,5 +1,7 @@
 #Tree visualization in R
 
+The following commands aren't the most elegant R scripts, but they are written to be easily modifiable to suit different types of tree visualizations.
+
 ##File formats: 
 * `XXX` is single tree in [newick](http://en.wikipedia.org/wiki/Newick_format) format
 
