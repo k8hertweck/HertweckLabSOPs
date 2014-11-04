@@ -8,7 +8,7 @@
 * `names.txt` is text file with two (tab separated) columns, with quotation marks surrounding text strings: 1) full taxon names, 2) taxon names in tree file
   
 ##Installing all packages in the R [phylogenetics task view](http://cran.r-project.org/web/views/Phylogenetics.html)
-This may be useful if you plan on doing many phylogenetic analyses using R. Otherwise, install each package used below separately using `install.packages`.
+This takes a little time, but may be useful if you plan on doing many phylogenetic analyses using R. Otherwise, install each package used below separately using `install.packages`.
 
 ```
 install.packages("ctv")
@@ -45,4 +45,5 @@ nodelabels(mltree$node.label, cex=0.4, adj=c(1.2, -0.4), frame="n")
 add.scale.bar(0,10, length=0.01, cex=0.4)
 dev.off()
 ```
-Modify any numerical values to adjust font size and placement.
+
+Modify any numerical values to adjust font size and placement. Also see options for exporting files in different formats (postscript can also be useful for publications).
