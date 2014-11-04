@@ -2,7 +2,7 @@
 
 [Figtree](http://tree.bio.ed.ac.uk/software/figtree/) is also good for exporting publication-ready tree figures, but is limited in what manipulations you can perform.
 
-The following commands aren't the most elegant R scripts, but they are written to be easily modifiable to suit different types of tree visualizations.
+The following commands aren't the most elegant R scripts, but they are written to be easily modifiable to suit different types of tree visualizations. Additional commands useful for tree manipulation and phylogenetic comparative methods in R can be found [here](http://www.r-phylo.org/wiki/Category:R_Help).
 
 ##File formats: 
 * `XXX` is single tree in [newick](http://en.wikipedia.org/wiki/Newick_format) format
