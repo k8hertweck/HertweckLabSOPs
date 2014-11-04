@@ -7,6 +7,15 @@
 
 * `names.txt` is text file with two (tab separated) columns, with quotation marks surrounding text strings: 1) full taxon names, 2) taxon names in tree file
   
+##Installing all packages in the R [phylogenetics task view](http://cran.r-project.org/web/views/Phylogenetics.html)
+This may be useful if you plan on doing many phylogenetic analyses using R. Otherwise, install each package used below separately using `install.packages`.
+
+```
+install.packages("ctv")
+library(ctv)
+install.views("Phylogenetics")
+```
+
 ##Setting path and loading necessary libraries
 ```
 setwd("PATH/TO/FILE")
@@ -27,12 +36,13 @@ mltree$tip.label<-names$long[match(mltree$tip.label,names$short)]
 
 ##Manipulating bootstrap support values
 
+
 ##Plotting tree and saving to PDF
-To save as PDF:
 ```
 pdf(file="tree.pdf")
 plot(ladderize(mltree, right=FALSE), cex=0.3, label.offset=0.005)
-add.scale.bar(0,148, length=0.2, cex=0.8)
+nodelabels(mltree$node.label, cex=0.4, adj=c(1.2, -0.4), frame="n")
+add.scale.bar(0,10, length=0.01, cex=0.4)
 dev.off()
 ```
-You can also plot without saving the tree to file by excluding the `pdf` and `dev.off` commands.
+Modify any numerical values to adjust font size and placement.
