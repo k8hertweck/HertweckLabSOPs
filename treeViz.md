@@ -27,6 +27,12 @@ mltree$tip.label<-names$long[match(mltree$tip.label,names$short)]
 
 ##Manipulating bootstrap support values
 
-##Plotting tree
-
-##Saving figure to file
+##Plotting tree and saving to PDF
+To save as PDF:
+```
+pdf(file="tree.pdf")
+plot(ladderize(mltree, right=FALSE), cex=0.3, label.offset=0.005)
+add.scale.bar(0,148, length=0.2, cex=0.8)
+dev.off()
+```
+You can also plot without saving the tree to file by excluding the `pdf` and `dev.off` commands.
