@@ -30,16 +30,16 @@ Maximum likelihood (ML) phylogenetic inference uses a model of evolution to sear
 	* `RAxML_bipartitions.XXX` (the highest scoring likelihood tree with bootstrap support values annotated on branches, newick format)
 
 ##[phyml](http://www.atgc-montpellier.fr/phyml/binaries.php)
->program installed as `phyml` in path
+* program installed as `phyml` in path
 
->[web server](http://atgc.lirmm.fr/phyml/)
+* [web server](http://atgc.lirmm.fr/phyml/)
 
->PhyML also has a menu-based command line interface which you can access by entering `phyml`
+* PhyML also has a menu-based command line interface which you can access by entering `phyml`
 
->search for best-scoring ML tree and run 1000 bootstrap replicates under GTR+G from sequential phylip alignment (default tree searching options in effect). Change to -b 0 to skip bootstrap analysis.
+* search for best-scoring ML tree and run 1000 bootstrap replicates under GTR+G from sequential phylip alignment (default tree searching options in effect). Change to -b 0 to skip bootstrap analysis.
 
->`phyml -i XXX.phy -d nt -q -n 1 -b 1000 -run_id XXX -m GTR -f m -c 4 -a e -o tlr -s NNI`
+* `phyml -i XXX.phy -d nt -q -n 1 -b 1000 -run_id XXX -m GTR -f m -c 4 -a e -o tlr -s NNI`
 
->Several files are output from this analysis. The most important are:
->>XXX.phy_phyml_stats_XXX.txt (specifies the parameters used to run the analysis, also describes the input data)
->>XXX.phy_phyml_tree_XXX.txt (the highest scoring likelihood tree with bootstrap support values annotated on branches, newick format)
+* Several files are output from this analysis. The most important are:
+`XXX.phy_phyml_stats_XXX.txt` specifies the parameters used to run the analysis, also describes the input data
+`XXX.phy_phyml_tree_XXX.txt` the highest scoring likelihood tree with bootstrap support values annotated on branches, newick format
