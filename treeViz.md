@@ -30,9 +30,15 @@ library(phytools)
 ##Importing tree
 `mltree<-read.tree("XXX")`
 
+##Rerooting tree
+```
+outgroup<-"OUTGROUP"
+mltreerooted<-root(mltree, outgroup)
+```
+
 ##Formatting tip labels: replacing short names from analysis with complete names for publication
 ```
-names.dat<-read.table("names.txt",header=FALSE)
+names.dat<-read.delim2("names.txt",header=FALSE)
 names<-data.frame(names.dat)
 colnames(names)<-c("long","short")
 mltree$tip.label<-names$long[match(mltree$tip.label,names$short)]
@@ -41,10 +47,10 @@ mltree$tip.label<-names$long[match(mltree$tip.label,names$short)]
 ##Manipulating bootstrap support values
 
 
-##Plotting tree and saving to PDF
+##Plotting tree with bootstrap support and scale bar; saving to PDF
 ```
 pdf(file="tree.pdf")
-plot(ladderize(mltree, right=FALSE), cex=0.3, label.offset=0.005)
+plotTree(ladderize(mltree, right=FALSE), cex=0.3, label.offset=0.005)
 nodelabels(mltree$node.label, cex=0.4, adj=c(1.2, -0.4), frame="n")
 add.scale.bar(0,10, length=0.01, cex=0.4)
 dev.off()
