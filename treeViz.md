@@ -38,7 +38,7 @@ mltreerooted<-root(mltree, outgroup)
 
 ##Formatting tip labels: replacing short names from analysis with complete names for publication
 ```
-names.dat<-read.delim2("names.txt",header=FALSE)
+names.dat<-read.delim2("names.txt", header=FALSE, stringsAsFactors=FALSE, quote="")
 names<-data.frame(names.dat)
 colnames(names)<-c("long","short")
 mltree$tip.label<-names$long[match(mltree$tip.label,names$short)]
