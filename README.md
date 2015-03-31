@@ -9,7 +9,7 @@ These files are short cheat sheets for my preferred methods to run in a bash she
 
 * `extractSequences.md` includes a few ways to extract a subset or reorder sequences in a fasta file
 
-##Phylogenetic analysis
+##Phylogenetic analysis (`phylogenetics/`)
 
 Scripts assume nucleotide data, unless amino acid (protein) data is otherwise specified. If you are starting with unaligned nucleotide data, you will likely consult the files in the following order:
 
@@ -19,7 +19,7 @@ Scripts assume nucleotide data, unless amino acid (protein) data is otherwise sp
 
 * `treeViz.md` tree visualization
 
-##Genome assembly
+##Next-generation sequencing assembly (`ngs`)
 
 * `sequenceQC.md` filtering raw next-generation sequencing reads for quality
 
