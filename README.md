@@ -19,7 +19,7 @@ Scripts assume nucleotide data, unless amino acid (protein) data is otherwise sp
 
 * `treeViz.md` tree visualization
 
-##Next-generation sequencing assembly (`ngs`)
+##Next-generation sequencing assembly (`ngs/`)
 
 * `sequenceQC.md` filtering raw next-generation sequencing reads for quality
 
