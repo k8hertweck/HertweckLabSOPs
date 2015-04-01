@@ -12,3 +12,5 @@ job submission
 job monitoring
 
 setting up aliases for login
+
+dos2unix
