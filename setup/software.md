@@ -1,0 +1,7 @@
+Software Setup
+=======
+
+##Mac
+
+
+##Windows
