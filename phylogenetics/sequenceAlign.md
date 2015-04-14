@@ -40,3 +40,7 @@
 * help
 
 `muscle -h`
+
+##Alignment visualization
+
+* [AliView](http://www.ormbunkar.se/aliview/) is a nice, lightweight program for both Windows and Mac that you can use to visualize your alignments.
