@@ -18,7 +18,7 @@
 
 * align with G-INS-i (accurate method), sort sequences in output, output as phylip (the last parameter is useful for input into a tree building program, see MLphylogenetics.md)
 
-`mafft --globalpair -maxiterate 16 --phylipout --reorder XXX.fas > XXX.phy`
+`mafft --globalpair --maxiterate 16 --phylipout --reorder XXX.fas > XXX.phy`
 
 * help
 
