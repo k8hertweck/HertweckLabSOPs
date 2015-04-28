@@ -8,8 +8,6 @@ The following commands aren't the most elegant R scripts, but they are written t
 * `XXX` is single tree in [newick](http://en.wikipedia.org/wiki/Newick_format) format
 
 * `PATH/TO/FILE` is path to the directory with your tree and data files
-
-* `names.txt` is text file with two (tab separated) columns, with quotation marks surrounding text strings: 1) full taxon names, 2) taxon names in tree file
   
 ##Installing all packages in the R [phylogenetics task view](http://cran.r-project.org/web/views/Phylogenetics.html)
 This takes a little time, but may be useful if you plan on doing many phylogenetic analyses using R. Otherwise, install each package used below separately using `install.packages`.
@@ -36,12 +34,19 @@ outgroup<-"OUTGROUP"
 mltreerooted<-root(mltree, outgroup)
 ```
 
-##Formatting tip labels: replacing short names from analysis with complete names for publication
+##Formatting tip labels: replacing working names from analysis with complete names for publication
 ```
-names.dat<-read.delim2("names.txt", header=FALSE, stringsAsFactors=FALSE, quote="")
-names<-data.frame(names.dat)
-colnames(names)<-c("long","short")
-mltree$tip.label<-names$long[match(mltree$tip.label,names$short)]
+#export existing tip labels
+tips<-as.data.frame(tree$tip.label)
+write.table(tips, file-"FILE", quote=FALSE, row.names=FALSE, col.names=FALSE, sep=",")
+#open file in text editor and add the names you desire as a second column, separated by commas
+#import complete name file
+names<-read.csv(file="FILE", header=FALSE)
+#add column headers
+colnames(names)<-c("original","replace")
+#replace names in tree
+tree$tip.label<-names$replace[match(tree$tip.label,names$original)]
+tree$tip.label<-as.character(tree$tip.label)
 ```
 
 ##Manipulating bootstrap support values
