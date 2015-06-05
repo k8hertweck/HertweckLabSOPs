@@ -50,7 +50,12 @@ tree$tip.label<-as.character(tree$tip.label)
 ```
 
 ##Manipulating bootstrap support values
-
+```
+bs <- tree$node.label #save bootstrap node labels to object
+class(bs) <- "numeric" #change from character to numeric
+bs[bs < 65] <- "" #remove all boostrap support values less than 65
+tree$node.label <- bs #replace node labels with modified object (filtered bootstraps)
+```
 
 ##Plotting tree with bootstrap support and scale bar; saving to PDF
 ```
