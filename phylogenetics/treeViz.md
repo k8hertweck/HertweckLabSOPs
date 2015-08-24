@@ -38,7 +38,7 @@ mltreerooted<-root(mltree, outgroup)
 ```
 #export existing tip labels
 tips<-as.data.frame(tree$tip.label)
-write.table(tips, file-"FILE", quote=FALSE, row.names=FALSE, col.names=FALSE, sep=",")
+write.table(tips, file="FILE", quote=FALSE, row.names=FALSE, col.names=FALSE, sep=",")
 #open file in text editor and add the names you desire as a second column, separated by commas
 #import complete name file
 names<-read.csv(file="FILE", header=FALSE)
